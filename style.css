@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f0f1a;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #fff;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+/* Button */
+.primary-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #6c63ff, #8f88ff);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 25px rgba(108, 99, 255, 0.35);
+}
+
+.primary-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(108, 99, 255, 0.5);
+}
+
+.primary-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Sections */
+.section {
+  padding: 100px 8%;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  width: 280px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+/* Light Theme */
+.light {
+  background: #f5f5f5;
+  color: #111;
+}
+
+.light .navbar {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light .project-card {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light .hero p {
+  color: #555;
+}
